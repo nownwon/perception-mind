@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('img/Birdy.jpg'); /* Replace 'background.jpg' with your image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Add transparency for better readability */
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.blog-list {
+    position: relative;
+}
+
+.blog-item {
+    position: absolute;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Add transparency */
+    border-radius: 10px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.blog-item:first-child {
+    background-color: #f18e8e; /* Today's blog */
+}
+
+.blog-item:hover {
+    transform: translateY(-5px);
+}
+
+.blog-item h2, .blog-item p {
+    text-align: center;
+    margin: 0;
+}

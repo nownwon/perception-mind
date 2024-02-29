@@ -1,100 +1,101 @@
-
-/*=======================================================
-          
-                     G o o d L u c k 
-
-=========================================================*/
-
-
-
 body, html {
     height: 100%;
-    margin:0;
+    margin: 0;
     font-family: 'Ubuntu', sans-serif;
-    line-height: 180%;
-    color: #666;
-    text-align: center;
-}
-.parallax1 {
-    background-image: url(img/New\ day.png);
-    min-height: 100%;
-}
-.parallax2 {
-    background-image: url(img/New\ sun.jpg);
-    min-height: 60%;
-}
-.parallax3 {
-    background-image: url(img/Power.png);
-    min-height: 40%;
-}
-.parallax4 {
-    background-image: url(img/Birdy.jpg);
-    min-height: 100%;
+    line-height: 1.6;
+    color: #1b1111;
 }
 
-.parallax1, .parallax2, .parallax3, .parallax4 {
+.parallax {
     position: relative;
-    opacity: 0.70;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed; /*Important*/
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+.parallax1 {
+    background-image: url('img/New day.png');
+}
+
+.parallax2 {
+    background-image: url('img/New sun.jpg');
+}
+
+.parallax3 {
+    background-image: url('img/Power.png');
+}
+
+.parallax4 {
+    background-image: url('img/Birdy.jpg');
 }
 
 .head {
     position: absolute;
-    color: #fff;
-    font-size: 500%;
-    top:50%;
-    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3em;
     text-transform: uppercase;
-    letter-spacing: 20px;
-    animation: drop 3.0s ease; /* Make things beautiful */
-    cursor: pointer;
+    text-align: center;
+    letter-spacing: 5px;
+    animation: fade-in 2s ease;
 }
-
-.head:hover{
-    color:transparent;
-}
-
 
 section {
-    overflow: auto;
-    padding: 50px 80px;
-
+    padding: 50px 20px;
 }
 
-footer{
-    width: 100%;
-    background-color: #323232;
-    color: #f2f2f2;
-    height: 8vh;
+h1 {
     text-align: center;
-    padding-top: 5vh;
-    padding-bottom: 1vh;
 }
 
-@media (max-width:800px) {
-    .head{
-        font-size: 200%;
+p {
+    text-align: justify;
+    margin-bottom: 30px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
     }
-   
+    to {
+        opacity: 1;
+    }
 }
 
 
-@keyframes drop {
-    0% {
-      opacity: 0;
-      transform: translateY(-80px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0px);
-    }
-  }
+.button {
+    display: inline-block;
+    background-color: #1ea9db;
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin-top: 20px; /* Adjust as needed */
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+}
 
+.button:hover {
+    background-color: #45a049;
+    transform: translateY(-3px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+}
 
-  @import url('https://fonts.googleapis.com/css?family=Ubuntu'); /*IMPORTANT*/
-
-
-  /*========T H A N K  Y O U=======*/
+.button:active {
+    transform: translateY(1px);
+    box-shadow: none;
+}

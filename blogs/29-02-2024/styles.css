@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  .header {
+    background-color: #dfc2c2;
+    color: #551616;
+    text-align: center;
+    padding: 50px 0;
+  }
+
+  .container {
+    padding: 50px;
+    text-align: center;
+  }
+
+  .section {
+    padding: 100px 0;
+    color: #849428;
+    text-align: center;
+  }
+
+  .friend-bg {
+    background-image: url('friends-bg.jpg'); /* Adjust the path to your background image */
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .colleague-bg {
+    background-image: url('colleague-bg.jpg'); /* Adjust the path to your background image */
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .mate-bg {
+    background-image: url('mates.jpg'); /* Adjust the path to your background image */
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .parallax {
+    height: 400px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+
+  .parallax-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #040532;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    border-radius: 10px;
+    max-width: 80%; /* Adjust the maximum width as needed */
+  }
+
+  .footer {
+    background-color: #333;
+    color: #dcd5d5;
+    text-align: center;
+    padding: 20px 0;
+  }
