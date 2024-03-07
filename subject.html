@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unique Stories Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #64b5f6, #81c784, #fff59d, #ffab91);
+    }
+    .container {
+      width: 90%;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.9);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-gap: 20px;
+    }
+    .story {
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      background-color: #fff;
+    }
+    .story h2 {
+      margin-top: 0;
+    }
+    .story:nth-child(odd) {
+      background: linear-gradient(to right, #ff7e5f, #feb47b);
+      color: #fff;
+    }
+    .story:nth-child(even) {
+      background: linear-gradient(to right, #9c27b0, #673ab7);
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="story">
+      <h2>Story 1</h2>
+      <p>This is the content of Story 1. It can be a long passage describing the story in detail.</p>
+    </div>
+    <div class="story">
+      <h2>Story 2</h2>
+      <p>This is the content of Story 2. It can be a long passage describing the story in detail.</p>
+    </div>
+    <div class="story">
+      <h2>Story 3</h2>
+      <p>This is the content of Story 3. It can be a long passage describing the story in detail.</p>
+    </div>
+
+
+
+
+  </div>
+</body>
+</html>
