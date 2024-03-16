@@ -22,21 +22,21 @@ body {
   }
 
   .friend-bg {
-    background-image: url('friends-bg.webp'); /* Adjust the path to your background image */
+    background-image: url('friends-bg.jpg'); /* Adjust the path to your background image */
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
   }
 
   .colleague-bg {
-    background-image: url('colleague-bg.webp'); /* Adjust the path to your background image */
+    background-image: url('colleague-bg.jpg'); /* Adjust the path to your background image */
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
   }
 
   .mate-bg {
-    background-image: url('mates.webp'); /* Adjust the path to your background image */
+    background-image: url('mates.jpg'); /* Adjust the path to your background image */
     background-attachment: fixed;
     background-size: cover;
     background-position: center;

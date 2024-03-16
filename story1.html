@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unique Stories Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #64b5f6, #81c784, #fff59d, #ffab91);
+    }
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.9);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+    }
+    .story {
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+    }
+    .story:nth-child(odd) {
+      background-color: #ffffff;
+    }
+    .story:nth-child(even) {
+      background-color: #f5f5f5;
+    }
+    .story h2 {
+      margin-top: 0;
+    }
+    .navigation {
+      text-align: center;
+      margin-top: 30px;
+    }
+    .navigation a {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #ffffff;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+      margin-right: 10px;
+    }
+    .navigation a:hover {
+      background-color: #0056b3;
+    }
+    .search-container {
+      margin-bottom: 20px;
+    }
+    .search-input {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+  <div class="navigation">
+    <a href="#story1">1</a>
+    <a href="#story2">2</a>
+    <a href="#story3">3</a>
+  </div>
+  <div class="container">
+    <div class="search-container">
+      <input type="text" id="searchInput" class="search-input" placeholder="Search stories...">
+    </div>
+    <div class="story" id="story1">
+      <h2>Story 1</h2>
+      <p>This is the content of Story 1. It can be a long passage describing the story in detail.</p>
+    </div>
+    <div class="story" id="story2">
+      <h2>Story 2</h2>
+      <p>This is the content of Story 2. It can be a long passage describing the story in detail.</p>
+    </div>
+    <div class="story" id="story3">
+      <h2>Story 3</h2>
+      <p>This is the content of Story 3. It can be a long passage describing the story in detail with hello.
+      </p>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('searchInput').addEventListener('input', function() {
+      var searchTerm = this.value.toLowerCase();
+      var stories = document.querySelectorAll('.story');
+      stories.forEach(function(story) {
+        var title = story.querySelector('h2').innerText.toLowerCase();
+        var content = story.querySelector('p').innerText.toLowerCase();
+        if (title.includes(searchTerm) || content.includes(searchTerm)) {
+          story.style.display = 'block';
+        } else {
+          story.style.display = 'none';
+        }
+      });
+    });
+  </script>
+</body>
+</html>
